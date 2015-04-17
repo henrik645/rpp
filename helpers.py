@@ -49,3 +49,10 @@ def match(token):
         advance()
     else:
         expected(token, symbol)
+        
+def peek(token):
+    if symbol == token:
+        advance()
+        return True
+    else:
+        return False
